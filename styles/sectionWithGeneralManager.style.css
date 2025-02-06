@@ -1,0 +1,44 @@
+.sectionWithGeneralManager{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #D81E05 0%, #490900 100%);
+}
+
+/* Section with general manager info */
+.sectionWithGeneralManager_Info{
+    width: 100%;
+    height: 845px;
+    padding: 72px 59px 27px ; 
+    position: relative;
+}
+.info_img img{
+    position: absolute;
+    z-index: 1;
+    width: 464px; 
+    height: 464px;
+
+}
+.info_content{
+    position: absolute;
+    z-index: 0;
+    right: 59px ;
+    top: 162px;
+    padding: 101px 27px 63px 92px;
+    width: 680px;
+    height: 657px;
+    background-image: url('../assets/backgroundGeneralManager.svg') ;
+}
+
+.info_content p{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 1);
+    overflow-wrap: break-word;
+
+
+}

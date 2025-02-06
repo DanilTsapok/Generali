@@ -1,0 +1,84 @@
+
+
+form {
+    width: 354px;
+    height: 387px;
+    background-color:rgba(74, 74, 74, 0.82) ;
+    border-radius: 15px;
+    padding: 52px 27px 45px ;
+    box-shadow: 0px 0px 12px 12px rgba(216, 30, 5, 0.29);
+
+
+    
+}
+form .formDataInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 11px ;
+}
+
+form .formDataInputs input{
+    width: 100%;
+    height: 40px;
+    background-color: #F7F7F7;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 11px 12px ;
+}
+
+form .formDataInputs input::placeholder{
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 17.5px;
+    letter-spacing: 1px;
+    color: #818181;
+}
+
+form button{
+    width: 100%;
+    height: 45px;
+    background-color: #D81E05;
+    border: none;
+    border-radius: 4px;
+    margin-top: 52px;
+
+    text-transform: uppercase;
+    color:#FFFFFF ;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 769px) {
+    form {
+        width: 354px;
+        height: 387px;
+        background-color:rgba(74, 74, 74, 0.82) ;
+        border-radius: 15px;
+        padding: 52px 27px 45px ;
+        box-shadow: 0px 0px 12px 12px rgba(216, 30, 5, 0.29);
+    
+    
+        
+    }
+}
+
+@media (max-width: 430px) {
+
+    form {
+        width: 354px;
+        height: 387px;
+        background-color:rgba(255, 255, 255, 1) ;
+        border-radius: 15px;
+        padding: 52px 27px 45px ;
+        box-shadow: 0px 4px 19.3px 4px rgba(0, 0, 0, 0.19);
+  
+    }
+}
