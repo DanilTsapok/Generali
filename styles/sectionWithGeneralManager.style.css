@@ -61,18 +61,21 @@
 @media (max-width:1200px) {
     .info_img img{
         position: absolute;
-        top: 50px;
+        top: 0;
         left: 0;
         z-index: 1;
         width: 464px; 
         height: 464px;
     
     }
+    .sectionWithGeneralManager_InfoContainer{
+        height: 760px;
+    }
     .sectionWithGeneralManager_InfoContainer .info_content{
         position: absolute;
         z-index: 0;
         right: 0;
-        top: 162px;
+        top: 105px;
         padding: 101px 27px 63px 92px;
         width: 680px;
         height: 657px;
