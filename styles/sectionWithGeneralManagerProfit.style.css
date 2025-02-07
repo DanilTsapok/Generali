@@ -42,7 +42,7 @@
 
 }
 .sectionWithGeneralManager_Profit .profit_calculate{
-    width:690px ;
+    width: 690px ;
     height: 400px;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 40px 127px 0px rgba(0, 0, 0, 0.08);
@@ -118,4 +118,85 @@
 .irs--round .irs-single:before{
     content: "";
     border-top-color:#D81E05 !important;
+}
+
+@media (max-width: 430px) {
+
+    .sectionWithGeneralManager_Profit{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+    .profit_content{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .sectionWithGeneralManager_Profit .profit_content {
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+    }
+    .sectionWithGeneralManager_Profit .profit_calculate{
+        width: 400px;
+
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 40px 127px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px ;
+    
+    }
+    .sectionWithGeneralManager_Profit .profit_stats{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profit_stats h3{
+        margin-bottom: 16px;
+    }
+    .profit_stats{
+        margin-top: 42px;
+    }
+    .sectionWithGeneralManager_Profit .profit_calculate button{
+        width: 496px;
+        height: 72px;
+        background: linear-gradient(90deg, #C91C04 0%, #D81E05 33.33%, #4B0900 66.67%, #4B0900 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px ;
+        border: none;
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+    .profit_content button h1{
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+        color: rgba(255, 255, 255, 1);
+    
+    }
+    .profit_content button h3{
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+    
+ 
+        color: rgba(255, 255, 255, 1);
+    
+    }
 }

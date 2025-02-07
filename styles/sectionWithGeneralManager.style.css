@@ -1,28 +1,43 @@
 .sectionWithGeneralManager{
     width: 100vw;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    display: block;
+    
     background: linear-gradient(180deg, #D81E05 0%, #490900 100%);
 }
 
-/* Section with general manager info */
 .sectionWithGeneralManager_Info{
     width: 100%;
-    height: 845px;
+    height: 100%;
     padding: 72px 59px 27px ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionWithGeneralManager_InfoContainer{
+    width: 100%;
+    height: 870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
+/* Section with general manager info */
+
 .info_img img{
     position: absolute;
+    top: 50px;
+    left: 20%;
     z-index: 1;
     width: 464px; 
     height: 464px;
 
 }
-.info_content{
+.sectionWithGeneralManager_InfoContainer .info_content{
     position: absolute;
     z-index: 0;
-    right: 59px ;
+    right: 360px;
     top: 162px;
     padding: 101px 27px 63px 92px;
     width: 680px;
@@ -41,4 +56,54 @@
     overflow-wrap: break-word;
 
 
+}
+
+@media (max-width: 430px) {
+    .sectionWithGeneralManager{
+        height: 100%;
+    }
+    .sectionWithGeneralManager_Info{
+      display: block;
+      height: 100%;
+      padding: 0;
+      position: static;
+    }
+    .sectionWithGeneralManager_InfoContainer{
+        display: flex;  
+        height: 100%;
+        /* padding-top: 45px; */
+        position: static;
+    }
+    .info_img img{
+        position: relative;
+        width: 297px; 
+        height: 297px;
+        top: 30px;
+        left: 0;
+    
+    }
+    .sectionWithGeneralManager_InfoContainer .info_content{
+        position: static;
+        z-index: 0;
+        top: -40px;
+        padding: 46px 35px;
+        width: 390px;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../assets/backgroundGeneralManager.svg') ;
+    }
+  
+    .info_content p{
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center; 
+        text-decoration-skip-ink: none;
+
+    }
+    .sectionWithGeneralManager_Profit{
+        margin-top: 32px;
+    }
 }

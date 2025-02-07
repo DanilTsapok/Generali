@@ -109,6 +109,17 @@ footer ul li{
     header .burger{
         display: block;
     }
+    header{
+        min-width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 17px 28px;
+        position: fixed;
+        z-index: 999;
+    }
     nav{
         display: none;
         
@@ -118,12 +129,17 @@ footer ul li{
 @media (max-width: 430px) {
     header{
         min-width: 100%;
-        height: 80px;
+        height: 100px;
         display: flex;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
         background-color: #fff;
         padding: 17px 28px;
+        position: fixed;
+        z-index: 999;
+    }
+    main{
+        padding-top:80px ;
     }
     header .burger{
         display: block;
@@ -149,7 +165,42 @@ footer ul li{
         text-decoration: none;
     }
 
+    footer{
+        width: 100%;
+        height: 100%;
+        padding:0;
+        border-top: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 41px ;
+        padding-bottom: 43px;
+    }
+    footer ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 14px;
+        flex-wrap: nowrap;
+        list-style: none;
+        margin-top: 11px;
+    }
+    
+    footer ul li{
+        font-family: 'Roboto';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 14.06px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+    
+    }
 
+    footer .logo img{
+        width: 131px;
+    }
 
 
 

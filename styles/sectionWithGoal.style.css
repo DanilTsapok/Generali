@@ -45,3 +45,9 @@
     color: rgba(14, 105, 175, 1);
 }
 
+@media (max-width: 430px) {
+    .sectionWithGoal_block{
+        display: none;
+    }
+    
+}
