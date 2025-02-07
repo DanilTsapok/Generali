@@ -39,6 +39,22 @@ var input = document.querySelector("#phone");
         delay: 4000, 
         disableOnInteraction: false, 
       },
-  
-  
   });
+
+  const burger = document.getElementById("burger")
+  const nav = document.querySelector("nav")
+  const body = document.body
+
+
+  burger.addEventListener('click', () =>{
+    nav.classList.toggle("menu_open")
+    if (nav.classList.contains("menu_open")) {
+      body.style.overflowY = "hidden"; 
+      closeBtn.style.display="block"
+  } else {
+      body.style.overflowY = "auto"; 
+  }
+  })
+
+
+  

@@ -1,11 +1,12 @@
 
 .sectionWithCards{
     width: 100vw;
-    height: 100% ;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 67px ;
+    
 
 }
 .sectionWithCards_title{
@@ -20,10 +21,11 @@
 }
 
 .sectionWithCards_content{
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    gap: 45px;
     padding: 0 18px;
 
 
@@ -63,13 +65,13 @@
 .sectionWithCards_card p{
     margin-top: 34.08px;
     font-family: 'Roboto';
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 22.4px;
     text-align: left;
     text-decoration-skip-ink: none;
     overflow-wrap: break-word;
-    width: 290px ;
+    width: 294px ;
 
 }
 .sectionWithCards_card button{
@@ -90,27 +92,70 @@
     cursor: pointer;
 }
 
-@media (max-width: 430px) {
-  
-.sectionWithCards_content{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- 
+@media (max-width: 430px)  {
+    .sectionWithCards_content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 18px;
+    }
+    .line{
+        display: none;
+    }
+    .sectionWithCards_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionWithCards_card p{
+        text-align: center;
+        overflow-wrap: break-word;
+        width: 294px ;
+    }
+}
+@media (max-width: 768px) {
+    .sectionWithCards_content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 18px;
+    }
+    .line{
+        display: none;
+    }
+    .sectionWithCards_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionWithCards_card p{
+        text-align: center;
+    }
+}
 
-    padding: 0 18px;
-}
-.line{
-    display: none;
-}
-.sectionWithCards_card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sectionWithCards_card p{
-    text-align: center;
-}
+@media (max-width: 1100px) {
+    .sectionWithCards_content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 18px;
+    }
+    .line{
+        display: none;
+    }
+    .sectionWithCards_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionWithCards_card p{
+        text-align: center;
+    }
 }

@@ -22,7 +22,7 @@
           <li>Iniziare a guadagnare subito</li>
         </ul>
       </nav>
-      <div class="burger">
+      <div class="burger" id="burger">
         <img src="./assets/icons/menu.svg" alt="" />
       </div>
     </header>
@@ -42,9 +42,21 @@
           <div class="rightSideSectionForm">
             <form>
               <div class="formDataInputs">
-                <input type="text" placeholder="il suo nome" />
-                <input type="text" placeholder="il suo cog" />
-                <input type="text" placeholder="e-mail" />
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="il suo nome"
+                  required
+                  minlength="2"
+                />
+                <input
+                  id="inputTest"
+                  type="text"
+                  placeholder="il suo cog"
+                  required
+                  minlength="2"
+                />
+                <input type="text" placeholder="e-mail" id="email" required />
                 <input type="text" id="phone" />
               </div>
               <button type="submit">registrati</button>

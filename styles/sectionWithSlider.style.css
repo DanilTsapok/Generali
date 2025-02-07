@@ -24,7 +24,6 @@
     border-radius: 10px;
     padding: 30px ; 
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-
 }
 .card_content_userInfo{
     display: flex;
@@ -55,6 +54,7 @@
     text-align: left;
     text-decoration-skip-ink: none;
     color: rgba(0, 6, 43, 1);
+    overflow-wrap: break-word;
 }
 .card_content_userInfo .profile_img{
     width: 132px;
@@ -96,6 +96,24 @@
     .swiper {
         width: 406px;
         height: 362px;
+      }
+      .userInfo p{
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+        color: rgba(0, 6, 43, 1);
+        
+    }
+    .swiper-slide .card{
+        padding: 10px;
+    }
+
+      .sectionSlider{
+        padding-top: 10px;
+        padding-bottom: 0;
       }
     
 }
