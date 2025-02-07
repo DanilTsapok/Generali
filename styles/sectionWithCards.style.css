@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 45px;
+
     padding: 0 18px;
 
 
@@ -55,6 +55,9 @@
  }
  .sectionWithCards_content>div:nth-child(3) button{
     width: 333px;
+ }
+ .sectionWithCards_content>div:first-child button{
+  margin-top: 56px;
  }
 .sectionWithCards_content>div:last-child h3{
     margin-top: 47px;
