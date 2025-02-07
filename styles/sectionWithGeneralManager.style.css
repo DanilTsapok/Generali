@@ -1,5 +1,5 @@
 .sectionWithGeneralManager{
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: block;
     
@@ -56,6 +56,28 @@
     overflow-wrap: break-word;
 
 
+}
+
+@media (max-width:1200px) {
+    .info_img img{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+        width: 464px; 
+        height: 464px;
+    
+    }
+    .sectionWithGeneralManager_InfoContainer .info_content{
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        top: 162px;
+        padding: 101px 27px 63px 92px;
+        width: 680px;
+        height: 657px;
+        background-image: url('../assets/backgroundGeneralManager.svg') ;
+    }
 }
 
 @media (max-width: 430px){

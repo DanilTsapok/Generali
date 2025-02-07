@@ -1,5 +1,5 @@
 .sectionWithForm{
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@
     padding: 79px 88px 70px 157px;
 
 }
- @media(max-width: 1200px){
+ @media(max-width: 1199px){
    
     .sectionWithForm .rightSideSection{
         width: 110%;
@@ -82,7 +82,7 @@
 
     .sectionWithForm .rightSideSection{
         width: 100%;
-        height: 536px;
+        height: 100%;
         display: flex;
         justify-content: center ;
         background-image: none;

@@ -1,5 +1,5 @@
 .sectionShareholders{
-    width: 100vw;
+    width: 100%;
     height: 370px;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
 
 @media (max-width: 430px)  {
     .sectionShareholders{
-        width: 100vw;
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -41,7 +41,7 @@
     }
     .sectionShareholders ul {
         padding: 0px 20px;
-        width: 100vw;
+        width: 100%;
         flex-wrap: wrap;
         gap: 22px ;
     }
