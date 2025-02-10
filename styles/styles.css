@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
- /* Montserrat */
+/* Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* Ubuntu */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
@@ -19,38 +19,43 @@
 
 /* Header */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-header{
+
+header {
     min-width: 100%;
     height: 126px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 27px 76px ;
+    padding: 27px 76px;
 }
-header .burger{
+
+header .burger {
     display: none;
 }
-nav{
+
+nav {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     gap: 28px;
 }
-nav ul li{
+
+nav ul li {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 20px;
@@ -59,40 +64,44 @@ nav ul li{
     list-style: none;
     text-decoration: none;
 }
-body{
+
+body {
     width: 100%;
     height: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
+
 /* Main */
-main{
+main {
     width: 100%;
     height: 100%;
 }
 
-.burger{
+.burger {
     display: none;
 }
-.close{
+
+.close {
     display: none;
 }
 
 
-footer{
+footer {
     width: 100%;
-    height: 170px ;
-    padding: 36px 42px 68px 90px ;
+    height: 170px;
+    padding: 36px 42px 68px 90px;
     border-top: 1px solid rgba(204, 66, 56, 1);
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 171px ;
+    gap: 171px;
 }
-footer ul{
-    
+
+footer ul {
+
     display: flex;
     justify-content: end;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 13px;
     list-style: none;
@@ -100,7 +109,7 @@ footer ul{
 
 }
 
-footer ul li{
+footer ul li {
     font-family: 'Roboto';
     font-size: 12px;
     font-weight: 400;
@@ -111,10 +120,11 @@ footer ul li{
 }
 
 @media (max-width: 769px) {
-    header .burger{
+    header .burger {
         display: block;
     }
-    header{
+
+    header {
         min-width: 100%;
         height: 100px;
         display: flex;
@@ -125,20 +135,23 @@ footer ul li{
         position: fixed;
         z-index: 999;
     }
-    header .burger{
+
+    header .burger {
         display: block;
     }
-    nav{
+
+    nav {
         display: none;
-        
+
     }
-    nav ul{
+
+    nav ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
+
     nav {
         position: absolute;
         z-index: 999;
@@ -152,11 +165,13 @@ footer ul li{
         display: none;
 
     }
+
     .menu_open {
         display: flex;
-        
+
     }
-    nav ul li{
+
+    nav ul li {
         font-family: 'Roboto';
         font-weight: 400;
         font-size: 20px;
@@ -166,14 +181,14 @@ footer ul li{
         text-decoration: none;
 
     }
-  
-    main{
+
+    main {
         padding-top: 100px;
     }
 }
 
 @media (max-width: 430px) {
-    header{
+    header {
         min-width: 100%;
         height: 100px;
         display: flex;
@@ -184,23 +199,27 @@ footer ul li{
         position: fixed;
         z-index: 999;
     }
-    main{
-        padding-top:80px ;
+
+    main {
+        padding-top: 80px;
     }
-    header .burger{
+
+    header .burger {
         display: block;
     }
-    nav{
+
+    nav {
         display: none;
-        
+
     }
-    nav ul{
+
+    nav ul {
         display: flex;
         flex-direction: column;
         /* justify-content: center;
         align-items: center; */
     }
-    
+
     nav {
         position: absolute;
         z-index: 3;
@@ -214,11 +233,13 @@ footer ul li{
         display: none;
 
     }
+
     .menu_open {
         display: flex;
-      
+
     }
-    nav ul li{
+
+    nav ul li {
         font-family: 'Roboto';
         font-weight: 400;
         font-size: 20px;
@@ -229,19 +250,20 @@ footer ul li{
 
     }
 
-    footer{
+    footer {
         width: 100%;
         height: 100%;
-        padding:0;
+        padding: 0;
         border-top: none;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        gap: 41px ;
+        gap: 41px;
         padding-bottom: 43px;
     }
-    footer ul{
+
+    footer ul {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -251,26 +273,22 @@ footer ul li{
         list-style: none;
         margin-top: 11px;
     }
-    
-    footer ul li{
+
+    footer ul li {
         font-family: 'Roboto';
         font-size: 15px;
         font-weight: 400;
         line-height: 14.06px;
         text-align: left;
         text-decoration-skip-ink: none;
-    
+
     }
 
-    footer .logo img{
+    footer .logo img {
         width: 131px;
     }
 
 
 
-    
-} 
 
-
-
-
+}
